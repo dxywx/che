@@ -1,12 +1,16 @@
 <div class="che-codemirror-editor">
-  <ng-form name="codemirrorForm">
+  <ng-form name="cheEditorController.editorForm">
     <textarea ui-codemirror="cheEditorController.editorOptions"
               aria-label="editor"
               ng-model-options="{ updateOn: 'default blur', debounce: { 'default': 500, 'blur': 0 }, allowInvalid: true }"
               ng-model="cheEditorController.editorContent"
               name="editor"
               required></textarea>
-    <div ng-messages="codemirrorForm.editor.$error || !cheEditorController.isEditorValid()">
+    <che-input type="hidden"
+               che-form="cheEditorController.editorForm"
+               custom-validator="cheEditorController.isEditorValid()"
+               ng-model="cheEditorController.editorState.errors.toString()"></che-input>
+    <div ng-messages="cheEditorController.editorForm.$invalid">
       <div ng-message="required">Editor's content is required.</div>
       <div ng-repeat="error in cheEditorController.editorState.errors">{{error}}</div>
     </div>

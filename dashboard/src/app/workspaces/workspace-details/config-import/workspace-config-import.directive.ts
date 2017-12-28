@@ -36,7 +36,8 @@ export class WorkspaceConfigImport {
     // scope values
     this.scope = {
       workspaceConfig: '=',
-      workspaceConfigOnChange: '&'
+      workspaceConfigOnChange: '&',
+      workspaceConfigForm: '=?'
     };
   }
 

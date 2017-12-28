@@ -140,6 +140,7 @@
         <che-label-container che-label-name="Workspace">
           <ng-form name="workspaceConfigForm">
             <che-workspace-config-import
+              workspace-config-form="workspaceConfigForm"
               ng-init="workspaceDetailsController.setForm(workspaceDetailsController.tab.Config, workspaceConfigForm)"
               workspace-config="workspaceDetailsController.workspaceDetails.config"
               workspace-config-on-change="workspaceDetailsController.updateWorkspaceConfigImport(config)"></che-workspace-config-import>
