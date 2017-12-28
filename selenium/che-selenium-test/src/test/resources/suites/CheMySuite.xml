@@ -26,7 +26,7 @@
             <class name="org.eclipse.che.selenium.refactor.move.FailMoveItemTest"/>
             <class name="org.eclipse.che.selenium.refactor.move.MoveJavaClassToSubpackageTest"/>
             <class name="org.eclipse.che.selenium.miscellaneous.DialogAboutTest"/>
-            <class name="org.eclipse.che.selenium.opendeclaration.Eclipse0119Test	"/>
+            <class name="org.eclipse.che.selenium.opendeclaration.Eclipse0119Test"/>
         </classes>
     </test>
 </suite>
